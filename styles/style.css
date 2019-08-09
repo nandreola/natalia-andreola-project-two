@@ -197,6 +197,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 span {
   display: block;
 }
@@ -283,12 +287,11 @@ a {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
+.main-nav ul a {
   padding: 20px;
 }
 
-a:hover {
+.main-nav ul a:hover {
   color: #86e0f9;
 }
 
@@ -308,4 +311,22 @@ a:hover {
 .main-header img {
   position: relative;
   top: 80px;
+}
+
+.about {
+  padding: 220px 0;
+}
+
+.about p {
+  padding: 0 70px 20px 70px;
+}
+
+.about .button-find-out {
+  text-align: center;
+}
+
+.about .button-find-out a {
+  background: #86e0f9;
+  padding: 15px 40px;
+  color: #0c1423;
 }

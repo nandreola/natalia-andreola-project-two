@@ -1,0 +1,17 @@
+.about {
+    padding: 220px 0;
+
+    p {
+        padding: 0 70px 20px 70px;
+    }
+
+    .button-find-out {
+        text-align: center;
+
+        a {
+            background: $primary-color;
+            padding: 15px 40px;
+            color: $bg-color;
+        }
+    }
+}
