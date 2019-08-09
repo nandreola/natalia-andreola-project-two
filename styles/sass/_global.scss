@@ -1,0 +1,36 @@
+* {
+    border: 1px solid red;
+}
+
+.wrapper-outer {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    display: block;
+}
+
+.about,
+.info,
+.profile {
+    background: $bg-color;
+}
+
+.article,
+.gallery {
+    background: $secondary-color;
+}
+
+footer {
+    background: $primary-color;
+}

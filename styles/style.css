@@ -179,11 +179,53 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+* {
+  border: 1px solid red;
+}
+
+.wrapper-outer {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  display: block;
+}
+
+.about,
+.info,
+.profile {
+  background: #0c1423;
+}
+
+.article,
+.gallery {
+  background: #0f614e;
+}
+
+footer {
+  background: #86e0f9;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 2rem;
   line-height: 3.2rem;
+  color: #ffffff;
 }
 
 h1,
@@ -194,6 +236,7 @@ a,
 .button {
   font-family: 'Barlow', sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -224,6 +267,7 @@ a,
 
 a {
   line-height: 2.9rem;
+  color: #ffffff;
 }
 
 .main-nav ul {
@@ -246,4 +290,22 @@ a {
 
 a:hover {
   color: #86e0f9;
+}
+
+.main-header {
+  background-image: url(../assets/header-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.main-header .main-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header img {
+  position: relative;
+  top: 80px;
 }
