@@ -1,0 +1,46 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+.button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 13.8rem;
+    line-height: 12.6rem;
+}
+
+h2 {
+    font-size: 8rem;
+    line-height: 9.2rem;
+}
+
+h3 {
+    font-size: 4.2rem;
+}
+
+h4 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+
+h3,
+a,
+.button {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+a {
+    line-height: 2.9rem;
+}

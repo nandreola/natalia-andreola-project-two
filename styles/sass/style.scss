@@ -1,3 +1,4 @@
-body {
-    background: pink;
-}
+@import "setup";
+@import "variables";
+@import "typography";
+@import "nav";
