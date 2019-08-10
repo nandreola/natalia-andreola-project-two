@@ -2,14 +2,14 @@
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 750px;
 
     .main-header-content {
         display: flex;
+        
+        img {
+            margin-top: 80px;
+        }
     }
 
-    img {
-        position: relative;
-        top: 80px;
-    }
 }

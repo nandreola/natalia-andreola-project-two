@@ -1,5 +1,6 @@
+// About section styles
 .about {
-    padding: 220px 0;
+    padding: 160px 0 220px 0;
 
     p {
         padding: 0 70px 20px 70px;
@@ -10,8 +11,44 @@
 
         a {
             background: $primary-color;
-            padding: 15px 40px;
             color: $bg-color;
         }
     }
+}
+
+// Article section styles 
+.article-summary {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+        padding: 40px 0;
+    }
+
+    & > * {
+        flex: 0 0 42%;
+    }
+
+    a {
+        background: $bg-color;
+    }
+
+    p {
+       margin-bottom: 40px; 
+    }
+}
+
+.article-img-one {
+    transform: translateY(-40px);
+    box-shadow: 40px 40px $primary-color;
+}
+
+.article-img-two {
+    order: 1;
+    transform: translateY(50px);
+    box-shadow: -40px 40px $primary-color;
+}
+
+.article-content-two {
+    text-align: right;
 }
