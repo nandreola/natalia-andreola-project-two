@@ -131,4 +131,27 @@
         }
     }
 }
+
+// Gallery section styles
+
+.gallery {
+    padding: 100px 0;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Footer section styles
+
+footer {
+    text-align: center;
+    color: $bg-color;
+    padding: 10px 0;
+
+    p {
+        margin: 0;
+    }
+}
     

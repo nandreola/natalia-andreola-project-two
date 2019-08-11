@@ -185,7 +185,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -464,4 +464,27 @@ a {
 .profile .profile-container .profile-img img {
   -webkit-box-shadow: 40px 35px #86e0f9;
           box-shadow: 40px 35px #86e0f9;
+}
+
+.gallery {
+  padding: 100px 0;
+}
+
+.gallery div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  color: #0c1423;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
 }
