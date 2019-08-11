@@ -94,3 +94,41 @@
     background-position: center;
     height: 50vh;
 }
+
+// Profile section styles
+
+.profile {
+    padding: 120px 0 85px 0;
+
+    .profile-container {
+        display: flex;
+
+        .profile-content {
+            width: calc((100% / 3) * 2);
+
+            h3 {
+                text-align: left;
+                margin-top: 0;
+            }
+
+            p {
+                margin-bottom: 50px;
+            }
+
+            a {
+                background: $primary-color;
+                color: $bg-color;
+            }
+        }
+        
+        .profile-img {
+            width: calc(100% / 3);
+            flex-shrink: 0;
+
+            img {
+                box-shadow: 40px 35px $primary-color;
+            }
+        }
+    }
+}
+    

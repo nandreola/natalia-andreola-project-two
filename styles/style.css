@@ -426,3 +426,42 @@ a {
   background-position: center;
   height: 50vh;
 }
+
+.profile {
+  padding: 120px 0 85px 0;
+}
+
+.profile .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .profile-container .profile-content {
+  width: calc((100% / 3) * 2);
+}
+
+.profile .profile-container .profile-content h3 {
+  text-align: left;
+  margin-top: 0;
+}
+
+.profile .profile-container .profile-content p {
+  margin-bottom: 50px;
+}
+
+.profile .profile-container .profile-content a {
+  background: #86e0f9;
+  color: #0c1423;
+}
+
+.profile .profile-container .profile-img {
+  width: calc(100% / 3);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.profile .profile-container .profile-img img {
+  -webkit-box-shadow: 40px 35px #86e0f9;
+          box-shadow: 40px 35px #86e0f9;
+}
