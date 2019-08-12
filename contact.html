@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Contact</title>
 </head>
-<body>
+<body class="contact-page">
     <header>
         <div class="wrapper">
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -31,40 +31,44 @@
         </div> <!-- .wrapper nav -->
     </header>
 
-    <main>
-        <h2>Get in touch</h2>
+    <main class="wrapper contact-container">
+        <section class="contact">
+            <h2>Get in touch</h2>
+    
+            <form action="" method="POST" class="contact-my-form">
+                <fieldset>
+                    <div>
+                        <input type="text" class="name" name="name" id="name" placeholder="Name" required>
+                        <label for="name" class="visually-hidden">name</label>
+            
+                        <input type="email" class="email" name="email" id="email" placeholder="Email address" required>
+                        <label for="email" class="visually-hidden">email</label>
+                    </div>
+            
+                    <textarea name="comment" id="comment" cols="30" rows="10">Message</textarea>
+            
+                    <input type="submit" value="Submit" class="upper">
+                </fieldset>
+            </form>
+        </section>
 
-        <form action="" method="POST" class="my-form">
-            <fieldset>
-                <div>
-                    <input type="text" class="name" name="name" id="name" placeholder="Name" required>
-                    <label for="name" class="visually-hidden">name</label>
-        
-                    <input type="email" class="email" name="email" id="email" placeholder="Email address" required>
-                    <label for="email" class="visually-hidden">email</label>
-                </div>
-        
-                <textarea name="comment" id="comment" cols="30" rows="10">Message</textarea>
-        
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
+        <aside class="contact-info">
+            <div class="contact-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="upper">info@email.com</p>
+            <p>123-456-7890</p>
+            <address>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </address>
+    
+        </aside>
     </main>
-
-    <aside>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <p class="upper">info@email.com</p>
-        <p>123-456-7890</p>
-        <address>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
-        </address>
-
-    </aside>
 
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>

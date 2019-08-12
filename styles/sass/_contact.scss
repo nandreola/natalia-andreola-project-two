@@ -1,0 +1,83 @@
+.contact-page {
+    background: $bg-color;
+    background-image: url(../assets/contact-header.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    display: flex;
+    padding-bottom: 165px;
+}
+
+// main section styles
+.contact {
+    border: 1px solid red;
+    order: 1;
+    flex: 1 0 75%;
+
+    .contact-my-form {
+        background: $secondary-color;
+        padding: 60px 65px;
+        box-shadow: -40px 40px $primary-color;
+    
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+    
+            .name,
+            .email,
+            textarea {
+                background: $secondary-color;
+                padding: 20px;
+            }
+    
+            .name,
+            .email {
+                border: none;
+                border-bottom: 1px solid $primary-color;
+            }
+
+            textarea {
+                width: 100%;
+                margin-top: 50px;
+                border: 1px solid $primary-color;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                background: $bg-color;
+                color: #fff;
+                margin-top: 50px;
+                padding: 15px;
+                border: none;
+            }
+        }
+    }
+}
+
+// aside section styles
+.contact-info {
+    border: 1px solid blue;
+    flex: 1 0 25%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: -40px;
+
+    a {
+        margin-right: 20px;
+        font-size: 2.2rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p.upper {
+        padding: 10px 0;
+        font-weight: bold;
+    }
+}
