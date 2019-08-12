@@ -1,3 +1,19 @@
+// Header styles
+.main-header {
+    background-image: url(../assets/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+
+    .main-header-content {
+        display: flex;
+        
+        img {
+            margin-top: 80px;
+        }
+    }
+}
+
 // About section styles
 .about {
     padding: 160px 0 220px 0;
@@ -143,15 +159,6 @@
     }
 }
 
-// Footer section styles
 
-footer {
-    text-align: center;
-    color: $bg-color;
-    padding: 10px 0;
 
-    p {
-        margin: 0;
-    }
-}
     

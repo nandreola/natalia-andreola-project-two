@@ -1,0 +1,114 @@
+// Blog main styles
+.blog-page {
+    background: $bg-color;
+    background-image: url(../assets/blog-header.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.blog-page main {
+    display: flex;
+}
+
+.blog-main {
+    order: 1;
+    width: 75%;
+
+    .blog-article-text {
+        padding: 90px 0 25px 50px;
+        border-left: 4px solid $primary-color;
+        border-bottom: 4px solid $primary-color;
+
+        h3 {
+            margin: 0;
+            text-align: left;
+        }
+
+        p {
+           margin: 0; 
+        }
+
+        p:nth-of-type(1) {
+            margin: 20px 0 60px 0;
+        }
+    }
+
+    .blog-article-img {
+        box-shadow: -40px 50px $primary-color;
+        position: relative;
+        left: 40px;
+    }
+}
+
+.blog-article-text,
+.comments-container,
+.my-form {
+    margin-right: 150px;
+}
+
+// Comments section 
+
+.comments-container {
+    padding-left: 40px;
+    
+    .comment-box {
+        display: flex;
+        margin-bottom: 100px;
+
+        div:nth-child(1) {
+            flex-shrink: 0;
+        }
+
+        .comment-text {
+            p {
+                margin-top: 0;
+                padding-left: 35px;
+            }
+        }
+    }
+}
+
+// Form section styles
+
+.my-form {
+    margin-bottom: 85px;
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+        
+        .email,
+        .name {
+            width: calc(50% - 50px);
+            border: none;
+            border-bottom: 1px solid $primary-color;
+    
+            &:not(.email) {
+                margin-right: 50px;
+            }
+        }
+
+        .email,
+        .name,
+        textarea {
+            background: $bg-color;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            margin: 35px 0 40px;
+            border: 1px solid $primary-color;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            color: #ffffff;
+            background: $secondary-color;
+            border: none;
+            padding: 10px;
+        }
+    }
+}

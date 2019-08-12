@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ab0dbecf18.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Blog</title>
+    <title>Under the Sea | Blog</title>
 </head>
-<body>
+
+<body class="wrapper-outer blog-page">
     <header>
         <div class="wrapper">
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -32,70 +33,82 @@
     </header>
 
     <main>
-        <h2>Blog</h2>
-        <img src="assets/blog-post-image.jpg" alt="small fishes under the sea">
-        <article>
-            <h3>Discovering new species</h3>
-            <p>Monday, May 4th, 2019 by Dieula</p>
-
-            <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volupat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odiocitae aliquam.</p>
-            <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis veljusto. Maecenas semper suspicit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec vicerra eleifend lacu.</p>             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volupat ante semper diam molestie, et aliquamerat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volupat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec behicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suspicit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tinciddunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>         
-            <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestivulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>          
-            <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam.</p>
-        </article>
-
-        <section class="comments">
-            <div class="comments-container">
-                <h4>Comments:</h4>
-                <div>
-                    <img src="assets/comment-1.jpg" alt="Girl's face">
+        <section class="blog-main">
+            <h2>Blog</h2>
+            <article class="blog-article-container">
+                <article>
                     <div>
-                        <p>Tuesday October 9th, 2018 by Jeremy</p>
-                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                        <img class="blog-article-img" src="assets/blog-post-image.jpg" alt="small fishes under the sea">
                     </div>
-                </div>
-                <div>
-                    <img src="assets/comment-2.jpg" alt="Teenager's face">
-                    <div>
-                        <p>Werdnesday October 10th, 2018 by Julia</p>
-                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisqeue ligula. Maecenas eu varius risus, eu aliquet arcus.</p>
+                    <div class="blog-article-text">
+                        <h3>Discovering new species</h3>
+                        <p>Monday, <time datetime="2019-05-04">May 4th, 2019</time> by Dieula</p>
+            
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volupat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odiocitae aliquam.</p>
+                        <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis veljusto. Maecenas semper suspicit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec vicerra eleifend lacu.</p>             
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volupat ante semper diam molestie, et aliquamerat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volupat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec behicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suspicit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tinciddunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>         
+                        <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestivulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>          
+                        <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam.</p>
                     </div>
-                </div>
-            </div> <!-- .comments-container -->
-
-            <form action="" method="POST" class="my-form">
-                <fieldset>
-                    <div>
-                        <input type="text" class="name" name="name" id="name" placeholder="Name" required>
-                        <label for="name" class="visually-hidden">name</label>
+                </article>
+            </article>
+    
+            <section class="comments">
+                <div class="comments-container">
+                    <h4>Comments:</h4>
+                    <div class="comment-box">
+                        <div>
+                            <img src="assets/comment-1.jpg" alt="Girl's face">
+                        </div>
+                        <div class="comment-text">
+                            <p>Tuesday <time datetime="2018-10-09">October 9th, 2018</time> by Jeremy</p>
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div>
+                            <img src="assets/comment-2.jpg" alt="Teenager's face">
+                        </div>
+                        <div class="comment-text">
+                            <p>Wednesday <time datetime="2018-10-10">October 10th, 2018</time> by Julia</p>
+                            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisqeue ligula. Maecenas eu varius risus, eu aliquet arcus.</p>
+                        </div>
+                    </div>
+                </div> <!-- .comments-container -->
+    
+                <form action="" method="POST" class="my-form">
+                    <fieldset>
+                        <div>
+                            <input type="text" class="name" name="name" id="name" placeholder="Name" required>
+                            <label for="name" class="visually-hidden">name</label>
+            
+                            <input type="email" class="email" name="email" id="email" placeholder="Email address" required>
+                            <label for="email" class="visually-hidden">email</label>
+                        </div>
         
-                        <input type="email" class="email" name="email" id="email" placeholder="Email address" required>
-                        <label for="email" class="visually-hidden">email</label>
-                    </div>
-    
-                    <textarea name="comment" id="comment" cols="30" rows="10">Comment</textarea>
-    
-                    <input type="submit" value="Post comment">
-                </fieldset>
-            </form>
-        </section> <!-- .comments -->
+                        <textarea name="comment" id="comment" cols="30" rows="10">Comment</textarea>
+        
+                        <input type="submit" value="Post comment">
+                    </fieldset>
+                </form>
+            </section> <!-- .comments -->
+        </section> <!-- .blog-main  -->
+        
+        <aside>
+            <img src="assets/side-blog-image.jpg" alt="Lots of people looking at the huge shark and fishes">
+            <div>
+                <h4>About under the sea</h4>
+                <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+                <h4>Recent posts</h4>
+                <ul>
+                    <li>Donec facilisis tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra id</li>
+                </ul>
+            </div>
+        </aside>
     </main>
-
-    <aside>
-        <img src="assets/side-blog-image.jpg" alt="Lots of people looking at the huge shark and fishes">
-        <div>
-            <h4>About under the sea</h4>
-            <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
-            <h4>Recent posts</h4>
-            <ul>
-                <li>Donec facilisis tortor ut</li>
-                <li>Augue lacinia at viverra</li>
-                <li>Semper sed sapien metus</li>
-                <li>Scelerisque nec pharetra id</li>
-            </ul>
-        </div>
-    </aside>
 
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>

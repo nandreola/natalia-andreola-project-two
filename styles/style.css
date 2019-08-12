@@ -165,7 +165,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -191,6 +191,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -477,6 +478,123 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.blog-page {
+  background: #0c1423;
+  background-image: url(../assets/blog-header.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.blog-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-main {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 75%;
+}
+
+.blog-main .blog-article-text {
+  padding: 90px 0 25px 50px;
+  border-left: 4px solid #86e0f9;
+  border-bottom: 4px solid #86e0f9;
+}
+
+.blog-main .blog-article-text h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.blog-main .blog-article-text p {
+  margin: 0;
+}
+
+.blog-main .blog-article-text p:nth-of-type(1) {
+  margin: 20px 0 60px 0;
+}
+
+.blog-main .blog-article-img {
+  -webkit-box-shadow: -40px 50px #86e0f9;
+          box-shadow: -40px 50px #86e0f9;
+  position: relative;
+  left: 40px;
+}
+
+.blog-article-text,
+.comments-container,
+.my-form {
+  margin-right: 150px;
+}
+
+.comments-container {
+  padding-left: 40px;
+}
+
+.comments-container .comment-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.comments-container .comment-box div:nth-child(1) {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.comments-container .comment-box .comment-text p {
+  margin-top: 0;
+  padding-left: 35px;
+}
+
+.my-form {
+  margin-bottom: 85px;
+}
+
+.my-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-form fieldset .email,
+.my-form fieldset .name {
+  width: calc(50% - 50px);
+  border: none;
+  border-bottom: 1px solid #86e0f9;
+}
+
+.my-form fieldset .email:not(.email),
+.my-form fieldset .name:not(.email) {
+  margin-right: 50px;
+}
+
+.my-form fieldset .email,
+.my-form fieldset .name,
+.my-form fieldset textarea {
+  background: #0c1423;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.my-form fieldset textarea {
+  width: 100%;
+  margin: 35px 0 40px;
+  border: 1px solid #86e0f9;
+}
+
+.my-form fieldset input[type=submit] {
+  width: 100%;
+  color: #ffffff;
+  background: #0f614e;
+  border: none;
+  padding: 10px;
 }
 
 footer {
