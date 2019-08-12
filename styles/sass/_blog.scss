@@ -12,7 +12,13 @@
 
 .blog-main {
     order: 1;
-    width: 75%;
+    flex: 1 0 65%;
+    // width: 65%;
+    border: 1px solid red;
+
+    h2 {
+        padding-left: 40px;
+    }
 
     .blog-article-text {
         padding: 90px 0 25px 50px;
@@ -110,5 +116,25 @@
             border: none;
             padding: 10px;
         }
+    }
+}
+
+// Blog aside styles
+aside {
+    flex: 1 0 35%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 620px;
+    margin-right: 5%;
+
+    .blog-aside {
+        background: $secondary-color;
+        width: 70%;
+    }
+
+    .blog-aside-img {
+        flex-shrink: 0;
     }
 }
