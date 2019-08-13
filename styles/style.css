@@ -302,25 +302,47 @@ a {
   color: #86e0f9;
 }
 
-.main-header {
+.main-page {
   background-image: url(../assets/header-image.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 750px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #0c1423;
 }
 
-.main-header .main-header-content {
+.main-page .main-header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-header .main-header-content img {
+.main-page .main-header-content .main-header-title {
+  width: 40%;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-page .main-header-content .main-header-title h1 {
+  width: 480px;
+}
+
+.main-page .main-header-content .main-header-img {
   margin-top: 80px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .about {
-  padding: 160px 0 220px 0;
+  padding: 30px 0 220px 0;
 }
 
 .about p {
@@ -345,7 +367,8 @@ a {
           justify-content: space-between;
 }
 
-.article-summary > div:not(.article-img-one) {
+.article-summary .article-content-one,
+.article-summary .article-content-two {
   padding: 40px 0;
 }
 
@@ -383,8 +406,8 @@ a {
 }
 
 .article-img-two img {
-  -webkit-transform: translateY(90px);
-          transform: translateY(90px);
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   -webkit-box-shadow: -40px 40px #86e0f9;
           box-shadow: -40px 40px #86e0f9;
 }
@@ -394,7 +417,7 @@ a {
 }
 
 .info {
-  padding: 170px 0 100px 0;
+  padding: 170px 20px 100px 20px;
 }
 
 .info .info-container {
@@ -433,7 +456,7 @@ a {
 }
 
 .profile {
-  padding: 120px 0 85px 0;
+  padding: 120px 20px 85px 20px;
 }
 
 .profile .profile-container {
@@ -472,7 +495,7 @@ a {
 }
 
 .gallery {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .gallery div {
@@ -502,9 +525,8 @@ a {
       -ms-flex-order: 1;
           order: 1;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 65%;
-          flex: 1 0 65%;
-  border: 1px solid red;
+      -ms-flex: 1 0 62%;
+          flex: 1 0 62%;
 }
 
 .blog-main h2 {
@@ -535,11 +557,12 @@ a {
           box-shadow: -40px 50px #86e0f9;
   position: relative;
   left: 40px;
+  width: calc(100% - 40px);
 }
 
 .blog-article-text,
 .comments-container,
-.my-form {
+.comments-my-form {
   margin-right: 150px;
 }
 
@@ -564,43 +587,71 @@ a {
   padding-left: 35px;
 }
 
-.my-form {
+.comments-my-form {
   margin-bottom: 85px;
 }
 
-.my-form fieldset {
+.comments-my-form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.my-form fieldset .email,
-.my-form fieldset .name {
-  width: calc(50% - 50px);
+.comments-my-form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments-my-form fieldset .email,
+.comments-my-form fieldset .name {
+  width: 48%;
   border: none;
   border-bottom: 1px solid #86e0f9;
 }
 
-.my-form fieldset .email:not(.email),
-.my-form fieldset .name:not(.email) {
-  margin-right: 50px;
+.comments-my-form fieldset .email::-webkit-input-placeholder,
+.comments-my-form fieldset .name::-webkit-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
 }
 
-.my-form fieldset .email,
-.my-form fieldset .name,
-.my-form fieldset textarea {
+.comments-my-form fieldset .email:-ms-input-placeholder,
+.comments-my-form fieldset .name:-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email::-ms-input-placeholder,
+.comments-my-form fieldset .name::-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email::placeholder,
+.comments-my-form fieldset .name::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email,
+.comments-my-form fieldset .name,
+.comments-my-form fieldset textarea {
   background: #0c1423;
   color: #ffffff;
   padding: 20px;
 }
 
-.my-form fieldset textarea {
+.comments-my-form fieldset textarea {
   width: 100%;
   margin: 35px 0 40px;
   border: 1px solid #86e0f9;
 }
 
-.my-form fieldset input[type=submit] {
+.comments-my-form fieldset input[type=submit] {
   width: 100%;
   color: #ffffff;
   background: #0f614e;
@@ -610,9 +661,12 @@ a {
 
 .blog-aside-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 35%;
-          flex: 1 0 35%;
-  border: 1px solid blue;
+      -ms-flex: 1 0 38%;
+          flex: 1 0 38%;
+  margin-top: 620px;
+}
+
+.blog-aside-container .blog-aside-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,18 +677,31 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 620px;
-  margin-right: 5%;
+  margin-right: 70px;
 }
 
 .blog-aside-container .blog-aside {
   background: #0f614e;
-  width: 70%;
+  width: 80%;
+  padding: 15px;
 }
 
 .blog-aside-container .blog-aside-img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+  left: -20px;
+}
+
+.blog-aside-container .blog-aside-img:after {
+  content: '';
+  width: 20px;
+  height: 100%;
+  display: block;
+  background: #0f614e;
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
 }
 
 .contact-page {
@@ -652,7 +719,6 @@ a {
 }
 
 .contact {
-  border: 1px solid red;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -674,26 +740,61 @@ a {
   padding: 0;
 }
 
-.contact .contact-my-form fieldset .name,
-.contact .contact-my-form fieldset .email,
-.contact .contact-my-form fieldset textarea {
+.contact .contact-my-form .contact-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contact-my-form .name,
+.contact .contact-my-form .email,
+.contact .contact-my-form textarea {
   background: #0f614e;
   padding: 20px;
 }
 
-.contact .contact-my-form fieldset .name,
-.contact .contact-my-form fieldset .email {
+.contact .contact-my-form .name,
+.contact .contact-my-form .email {
   border: none;
   border-bottom: 1px solid #86e0f9;
+  width: 48%;
 }
 
-.contact .contact-my-form fieldset textarea {
+.contact .contact-my-form .name::-webkit-input-placeholder,
+.contact .contact-my-form .email::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact .contact-my-form .name:-ms-input-placeholder,
+.contact .contact-my-form .email:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact .contact-my-form .name::-ms-input-placeholder,
+.contact .contact-my-form .email::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact .contact-my-form .name::placeholder,
+.contact .contact-my-form .email::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.contact .contact-my-form textarea {
   width: 100%;
   margin-top: 50px;
   border: 1px solid #86e0f9;
+  color: #fff;
 }
 
-.contact .contact-my-form fieldset input[type="submit"] {
+.contact .contact-my-form input[type="submit"] {
   width: 100%;
   background: #0c1423;
   color: #fff;
@@ -703,7 +804,6 @@ a {
 }
 
 .contact-info {
-  border: 1px solid blue;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
@@ -743,4 +843,46 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 10rem;
+    line-height: 10.5rem;
+    padding-left: 20px;
+  }
+  .article-summary > * {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .article-summary .article-content-one,
+  .article-summary .article-content-two {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .article-summary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article-summary > * {
+    width: 100%;
+  }
+  .article-summary .article-img-one img,
+  .article-summary .article-img-two img {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+  }
+  .article-summary .article-img-two {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
 }

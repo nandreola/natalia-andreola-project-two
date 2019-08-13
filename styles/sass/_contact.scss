@@ -12,7 +12,6 @@
 
 // main section styles
 .contact {
-    border: 1px solid red;
     order: 1;
     flex: 1 0 75%;
 
@@ -26,40 +25,52 @@
             margin: 0;
             padding: 0;
     
-            .name,
-            .email,
-            textarea {
-                background: $secondary-color;
-                padding: 20px;
-            }
-    
-            .name,
-            .email {
-                border: none;
-                border-bottom: 1px solid $primary-color;
-            }
+        }
+        
+        .contact-input {
+            display: flex;
+            justify-content: space-between;
+        }
+        .name,
+        .email,
+        textarea {
+            background: $secondary-color;
+            padding: 20px;
+        }
 
-            textarea {
-                width: 100%;
-                margin-top: 50px;
-                border: 1px solid $primary-color;
-            }
+        .name,
+        .email {
+            border: none;
+            border-bottom: 1px solid $primary-color;
+            width: 48%;
 
-            input[type="submit"] {
-                width: 100%;
-                background: $bg-color;
+            &::placeholder {
                 color: #fff;
-                margin-top: 50px;
-                padding: 15px;
-                border: none;
+                opacity: 1;
             }
+        }
+        
+
+        textarea {
+            width: 100%;
+            margin-top: 50px;
+            border: 1px solid $primary-color;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: $bg-color;
+            color: #fff;
+            margin-top: 50px;
+            padding: 15px;
+            border: none;
         }
     }
 }
 
 // aside section styles
 .contact-info {
-    border: 1px solid blue;
     flex: 1 0 25%;
     margin-right: 5%;
     display: flex;

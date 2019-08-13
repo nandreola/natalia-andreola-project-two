@@ -12,9 +12,7 @@
 
 .blog-main {
     order: 1;
-    flex: 1 0 65%;
-    // width: 65%;
-    border: 1px solid red;
+    flex: 1 0 62%;
 
     h2 {
         padding-left: 40px;
@@ -43,12 +41,13 @@
         box-shadow: -40px 50px $primary-color;
         position: relative;
         left: 40px;
+        width: calc(100% - 40px);
     }
 }
 
 .blog-article-text,
 .comments-container,
-.my-form {
+.comments-my-form {
     margin-right: 150px;
 }
 
@@ -76,22 +75,29 @@
 
 // Form section styles
 
-.my-form {
+.comments-my-form {
     margin-bottom: 85px;
 
     fieldset {
         border: none;
         padding: 0;
         margin: 0;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+
+        }
         
         .email,
         .name {
-            width: calc(50% - 50px);
+            width: 48%;
             border: none;
             border-bottom: 1px solid $primary-color;
-    
-            &:not(.email) {
-                margin-right: 50px;
+
+            &::placeholder {
+                opacity: 1;
+                color: #ffffff;
             }
         }
 
@@ -121,20 +127,36 @@
 
 // Blog aside styles
 .blog-aside-container {
-    flex: 1 0 35%;
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex: 1 0 38%;
     margin-top: 620px;
-    margin-right: 5%;
+    
+    .blog-aside-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 70px;
+    }
 
     .blog-aside {
         background: $secondary-color;
-        width: 70%;
+        width: 80%;
+        padding: 15px;
     }
 
     .blog-aside-img {
         flex-shrink: 0;
+        position: relative;
+        left: -20px;
+
+        &:after {
+            content: '';
+            width: 20px;
+            height: 100%;
+            display: block;
+            background: $secondary-color;
+            position: absolute;
+            bottom: -15px;
+            right: -20px;
+        }
     }
 }
