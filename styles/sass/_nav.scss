@@ -5,14 +5,16 @@
 
     li {
         list-style-type: none;
+        padding: 20px;
     }
     
     a {
-        padding: 20px;
         display: inline-block;
+        border-bottom: 2px solid transparent;
     
         &:hover {
             color: $primary-color;
+            border-bottom: 2px solid $primary-color;
         }
     }
 }

@@ -16,6 +16,7 @@
 
     h2 {
         padding-left: 40px;
+        margin-bottom: 20px;
     }
 
     .blog-article-text {
@@ -141,6 +142,10 @@
         background: $secondary-color;
         width: 80%;
         padding: 15px;
+
+        ul {
+            padding-left: 20px;
+        }
     }
 
     .blog-aside-img {
