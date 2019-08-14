@@ -27,19 +27,28 @@
         fieldset {
             border: none;
             margin: 0;
-            padding: 0;
-    
+            padding: 0;  
         }
         
         .contact-input {
             display: flex;
             justify-content: space-between;
         }
+        
         .name,
         .email,
         textarea {
             background: $secondary-color;
             padding: 20px;
+
+            &::placeholder {
+                color: #fff;
+                opacity: 1;
+            }
+
+            &:focus {
+                outline: 2px solid #fff;
+            }
         }
 
         .name,
@@ -47,14 +56,8 @@
             border: none;
             border-bottom: 1px solid $primary-color;
             width: 48%;
-
-            &::placeholder {
-                color: #fff;
-                opacity: 1;
-            }
         }
         
-
         textarea {
             width: 100%;
             margin-top: 50px;
@@ -69,6 +72,10 @@
             margin-top: 50px;
             padding: 15px;
             border: none;
+
+            &:focus {
+                outline: 2px solid #fff;
+            }
         }
     }
 }

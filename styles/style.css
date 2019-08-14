@@ -203,6 +203,11 @@ a {
   display: inline-block;
 }
 
+.button:hover {
+  -webkit-box-shadow: 0 0 5px 3px #fff;
+          box-shadow: 0 0 5px 3px #fff;
+}
+
 span {
   display: block;
 }
@@ -626,36 +631,46 @@ a {
   border-bottom: 1px solid #86e0f9;
 }
 
-.comments-my-form fieldset .email::-webkit-input-placeholder,
-.comments-my-form fieldset .name::-webkit-input-placeholder {
-  opacity: 1;
-  color: #ffffff;
-}
-
-.comments-my-form fieldset .email:-ms-input-placeholder,
-.comments-my-form fieldset .name:-ms-input-placeholder {
-  opacity: 1;
-  color: #ffffff;
-}
-
-.comments-my-form fieldset .email::-ms-input-placeholder,
-.comments-my-form fieldset .name::-ms-input-placeholder {
-  opacity: 1;
-  color: #ffffff;
-}
-
-.comments-my-form fieldset .email::placeholder,
-.comments-my-form fieldset .name::placeholder {
-  opacity: 1;
-  color: #ffffff;
-}
-
 .comments-my-form fieldset .email,
 .comments-my-form fieldset .name,
 .comments-my-form fieldset textarea {
   background: #0c1423;
   color: #ffffff;
   padding: 20px;
+}
+
+.comments-my-form fieldset .email::-webkit-input-placeholder,
+.comments-my-form fieldset .name::-webkit-input-placeholder,
+.comments-my-form fieldset textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email:-ms-input-placeholder,
+.comments-my-form fieldset .name:-ms-input-placeholder,
+.comments-my-form fieldset textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email::-ms-input-placeholder,
+.comments-my-form fieldset .name::-ms-input-placeholder,
+.comments-my-form fieldset textarea::-ms-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email::placeholder,
+.comments-my-form fieldset .name::placeholder,
+.comments-my-form fieldset textarea::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.comments-my-form fieldset .email:focus,
+.comments-my-form fieldset .name:focus,
+.comments-my-form fieldset textarea:focus {
+  outline: 2px solid #fff;
 }
 
 .comments-my-form fieldset textarea {
@@ -670,6 +685,10 @@ a {
   background: #0f614e;
   border: none;
   padding: 10px;
+}
+
+.comments-my-form fieldset input[type=submit]:focus {
+  outline: 2px solid #fff;
 }
 
 .blog-aside-container {
@@ -777,35 +796,45 @@ a {
   padding: 20px;
 }
 
-.contact .contact-my-form .name,
-.contact .contact-my-form .email {
-  border: none;
-  border-bottom: 1px solid #86e0f9;
-  width: 48%;
-}
-
 .contact .contact-my-form .name::-webkit-input-placeholder,
-.contact .contact-my-form .email::-webkit-input-placeholder {
+.contact .contact-my-form .email::-webkit-input-placeholder,
+.contact .contact-my-form textarea::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
 }
 
 .contact .contact-my-form .name:-ms-input-placeholder,
-.contact .contact-my-form .email:-ms-input-placeholder {
+.contact .contact-my-form .email:-ms-input-placeholder,
+.contact .contact-my-form textarea:-ms-input-placeholder {
   color: #fff;
   opacity: 1;
 }
 
 .contact .contact-my-form .name::-ms-input-placeholder,
-.contact .contact-my-form .email::-ms-input-placeholder {
+.contact .contact-my-form .email::-ms-input-placeholder,
+.contact .contact-my-form textarea::-ms-input-placeholder {
   color: #fff;
   opacity: 1;
 }
 
 .contact .contact-my-form .name::placeholder,
-.contact .contact-my-form .email::placeholder {
+.contact .contact-my-form .email::placeholder,
+.contact .contact-my-form textarea::placeholder {
   color: #fff;
   opacity: 1;
+}
+
+.contact .contact-my-form .name:focus,
+.contact .contact-my-form .email:focus,
+.contact .contact-my-form textarea:focus {
+  outline: 2px solid #fff;
+}
+
+.contact .contact-my-form .name,
+.contact .contact-my-form .email {
+  border: none;
+  border-bottom: 1px solid #86e0f9;
+  width: 48%;
 }
 
 .contact .contact-my-form textarea {
@@ -822,6 +851,10 @@ a {
   margin-top: 50px;
   padding: 15px;
   border: none;
+}
+
+.contact .contact-my-form input[type="submit"]:focus {
+  outline: 2px solid #fff;
 }
 
 .contact-info {
@@ -864,6 +897,26 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  z-index: 10;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
 }
 
 @media (max-width: 1280px) {
@@ -1044,8 +1097,11 @@ footer p {
             align-items: center;
     padding: 50px;
   }
+  .blog-aside-container .blog-aside-img {
+    left: 0;
+  }
   .blog-aside-container .blog-aside-img:after {
-    content: none;
+    display: none;
   }
 }
 
@@ -1175,6 +1231,44 @@ footer p {
   }
   .comments-container .comment-box .comment-text p {
     padding-left: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #0f614e;
+    width: 35%;
+    padding-left: 0;
+    position: absolute;
+    padding-top: 50px;
+    left: -200px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-box-shadow: 15px 15px #86e0f9;
+            box-shadow: 15px 15px #86e0f9;
+    z-index: 5;
+  }
+  .main-nav ul li {
+    border-bottom: 1px solid #86e0f9;
+    text-align: center;
+  }
+  .main-nav ul li a:hover {
+    border-bottom: none;
+    color: #0c1423;
+  }
+  input[type="checkbox"]:checked ~ .main-nav ul {
+    left: 0;
+  }
+  .main-page .main-header-content .main-header-title h1 {
+    padding-top: 60px;
+  }
+  .blog-main h2,
+  .contact h2 {
+    padding-top: 40px;
   }
 }
 

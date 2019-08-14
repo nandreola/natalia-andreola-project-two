@@ -20,6 +20,10 @@ a {
 .button {
     padding: 15px 40px;
     display: inline-block;
+
+    &:hover {
+        box-shadow: 0 0 5px 3px #fff;
+    }
 }
 
 span {

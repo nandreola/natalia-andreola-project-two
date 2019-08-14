@@ -87,7 +87,6 @@
         div {
             display: flex;
             justify-content: space-between;
-
         }
         
         .email,
@@ -95,11 +94,6 @@
             width: 48%;
             border: none;
             border-bottom: 1px solid $primary-color;
-
-            &::placeholder {
-                opacity: 1;
-                color: #ffffff;
-            }
         }
 
         .email,
@@ -108,6 +102,15 @@
             background: $bg-color;
             color: #ffffff;
             padding: 20px;
+
+            &::placeholder {
+                opacity: 1;
+                color: #ffffff;
+            }
+
+            &:focus {
+                outline: 2px solid #fff;
+            }
         }
 
         textarea {
@@ -122,6 +125,10 @@
             background: $secondary-color;
             border: none;
             padding: 10px;
+
+            &:focus {
+                outline: 2px solid #fff;
+            }
         }
     }
 }
